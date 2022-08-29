@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Control Gastos</title>
+</head>
+<body class="bodyGastos fondoBody">
+    <nav class="barraConversor">
+        <ul>
+            <li><a href="./gastos.html">Gastos</a></li>
+            <li><a href="./conversos.html">Conversor</a></li>
+        </ul>
+    </nav>
+    <main class="gastosMain">
+        <h1>Gastos Personales</h1>
+
+        <h2 id="saludo"></h2>
+
+        <div class="result" id="resultado"></div>
+        <div class="contenedorGastos">
+            <div class="contenedorPresupuesto"> 
+                <h2>Ingrese su presupuesto</h2>
+                <form class="formPresupuesto" id="budgetCalc">
+                    <input  id="presupuestoInput" class="formPresupuesto__input" type="number" name="presupuestoIngresado" placeholder="Coloca tu presupuesto">
+                    <button type="submit" class="formPresupuesto__input formPresupuesto__boton">Ingresar presupuesto</button>
+                </form>
+            </div>
+            <div class="agregarDatos">
+                <h2>Agrega los datos del gasto aqui</h2>
+                <form class="agregarDatos__form" id="moneyCalc">
+                    <label for="tipoGasto">Tipo de Gasto</label>
+                    <input id="gastoTipo" type="text" placeholder="Ej Cine">
+                    <label for="fechaGasto">Fecha del Gasto</label>
+                    <input id="gastoFecha" type="date" placeholder="EJ 04/08/2000">
+                    <label for="codigoSeguridad">Codigo de Seguridad</label>
+                    <input id="codigoSeg" type="number" placeholder="EJ 777">
+                    <label for="cantidadGasto">Cantidad del gasto</label>
+                    <input id="gastoCantidad" type="number" placeholder="Ej 5000">
+                    <button type="submit" id="botonAgregar" class="agregarDatos__boton">Agregar Datos</button>
+                </form>
+            </div>
+        </div>
+        <div id="totalGastos">
+
+        </div>
+        <h3 id="totalGastos"></h3>
+        <table id="queGasto">
+            <tr>
+                <th>Area </th>
+                <th>Fecha </th>
+                <th>Monto </th>
+            </tr>
+        </table>
+
+        <button id="cerrarSes">cerrar session </button>
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/gastos.js"></script>
+</body>
+</html>

@@ -1,0 +1,437 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+.fondoBody{
+    background-image: url(../recursos/bg3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content:center ;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,128,255,0.5);
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    color: #46A2FD;
+}
+
+/* Estilos Formularios */
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    transition: left 500ms cubic-bezier(0.175,0.855,0.320,1.275);
+
+}
+
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #46A2FD;
+}
+
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #46A2FD;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+
+.formulario__register{
+    display: none;
+}
+
+/* ----------------------------------------------NUMEROTARJETA---------------------------------- */
+
+.foto-tarjeta{
+    width: 75%;
+    height: 25rem;
+}
+
+
+.contenedor-boton button{
+    width: 30%;
+    margin-top: 1.5rem;
+    height: 2.5rem;
+    border-radius: 25px;
+    border: none;
+}
+
+.contenedor-input input{
+    text-align: center;
+    width: 60%;
+    border-radius: 25px;
+    border: none;
+}
+
+.textoInput{
+    font-size: 160%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 1rem;
+}
+
+.botonIngresar{
+    background-color: rgb(86, 86, 240);
+}
+
+.botonSalir{
+    background-color: rgb(237, 65, 65);
+}
+
+
+/* -------------------------------------GASTOS----------------------------------------- */
+
+
+.result{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.gastosMain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tituloGastos{
+    font-size: 400%;
+    border-bottom: 1px solid black;
+    width: 100rem;
+    margin-bottom: 1rem;    
+    padding-bottom: 1rem;
+}
+
+.contenedorGastos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.formPresupuesto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.formPresupuesto__input{
+    width: 15rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+.formPresupuesto__boton{
+    text-align: center;
+    margin-top: 1rem;
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+}
+
+.agregarDatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.agregarDatos__form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.agregarDatos__form input{
+    width: 20rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    height: 2rem;
+}
+
+.agregarDatos__boton{
+    margin-top: 1rem;
+    width: 10rem;
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+}
+
+.tablaGastos{
+    background-color: white;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    font-size: 150%;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.tablaGastos th{
+    border-bottom: 2px solid black;
+    padding-bottom: 0.3rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tablaGastos td{
+    border: 1px  solid black;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------------------------------- CONVERSOR ---------------------------------- */
+
+.barraConversor ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.barraConversor li {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.barraConversor ul li a {
+    color: #121212;
+    font-weight: 600;
+}
+
+.bodyConversor{
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.textoConversor{
+    text-align: center;
+}
+
+.btn{
+    background-color: #f4f4f4;
+    color: #121212;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 12px;
+}
+
+.conversor-imagen{
+    width: 500px;
+}
+
+.moneda{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.moneda select{
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.moneda input {
+    border: 0;
+    font-size: 30px;
+    text-align: right;
+}
+
+.taza-cambio-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cambio{
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+select:focus, input:focus, button:focus{
+    outline: 0;
+}
+
+
+
+
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
+
+
+
+
+
+@media (max-width:600px){
+    .moneda input{
+        width: 200px;
+    }
+}

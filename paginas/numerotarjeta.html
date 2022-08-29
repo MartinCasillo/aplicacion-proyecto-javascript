@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Control Gastos</title>
+</head>
+<body class="fondoTarjeta fondoBody">
+    <main class="main">
+        <div class="container text-center contenedorFoto mb-2">
+            <img src="../recursos/tarjeta.png" class="img-fluid foto-tarjeta" alt="">
+        </div>
+        <div class="container  mt-1 mb-5">
+            <form class="row g-3 d-flex justify-content-center text-center">
+                <div class="col-md-6">
+                    <label for="bancoTarjeta" class="form-label">Banco</label>
+                    <input type="text" class="form-control" id="bancoTarjeta" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="fechaVencimiento" class="form-label">Fecha de Vencimiento</label>
+                    <input type="date" class="form-control" id="fechaVencimiento" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="codSeg" class="form-label">Codigo de Seguridad</label>
+                    <input type="number" class="form-control" id="codSeg" required>
+
+                </div>
+                <div class="col-md-4">
+                    <label for="tarjetaNumero" class="form-label">Numero de Tarjeta</label>
+                    <input type="number" class="form-control" id="tarjetaNumero" placeholder="655 011 1130309929">
+                </div>
+                <div id="formularioTarjeta" class="col-md-12">
+                    <button type="submit" class="boton btn btn-dark">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/tarjeta.js"></script>
+</body>
+</html>
